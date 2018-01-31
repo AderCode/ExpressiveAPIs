@@ -1,6 +1,6 @@
 #Lab Assignment
 
-- REQUIRED
+<!-- - REQUIRED
 
     1. Setup an API with the project structure like:
 
@@ -36,10 +36,10 @@
 
         - add the api router to the express app with the path /api
 
-    5. Test all of your methods using Postman (https://www.getpostman.com/)
+    5. Test all of your methods using Postman (https://www.getpostman.com/) -->
 
 
-<!-- - ADVANCED
+- ADVANCED
 
     1. Create an index.html, styles.css, and app.js file in the client folder
 
@@ -51,6 +51,6 @@
 
             3. When a chirp is clicked, popup a modal that lets you edit the chirp
 
-    2. Remember to use express.static middleware! -->
+    2. Remember to use express.static middleware!
 
 
