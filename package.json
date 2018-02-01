@@ -1,10 +1,11 @@
 {
   "name": "3-apilab",
   "version": "1.0.0",
-  "description": "Covalence.io lab assignmet for module `Introduction to Backend Development` section `Building APIs with ExpressJS`",
+  "description":
+    "Covalence.io lab assignmet for module `Introduction to Backend Development` section `Building APIs with ExpressJS`",
   "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server/serverjs"
   },
   "author": "Matthew Aderhold",
   "license": "ISC",

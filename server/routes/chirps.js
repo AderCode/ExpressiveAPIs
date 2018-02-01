@@ -17,21 +17,24 @@ router.post("/", (req, res) => {
     console.log('req.body = ', req.body)
   // console.log("req.body = ", req.body);
   //   console.log('req.body.text = ', req.body.text)
+  res.status(200)
   res.redirect("/");
 });
 
-router.put("/edit-chirp/:id?", (req, res) => {
+router.put("/:id?", (req, res) => {
   //PUT stuff here lol xD :3 <(^_^<)
   let id = req.params.id;
   store.UpdateChirp(id, req.body);
-  res.sendStatus(200);
+  res.status(200)
+  res.redirect("/");
 });
 
-router.delete("/delete-chirp/:id?", (req, res) => {
+router.delete("/:id?", (req, res) => {
   //DELETE stuff here Dx- - - - <(*_*<)
   let id = req.params.id;
   store.DeleteChirp(id);
-  res.sendStatus(200);
+  res.status(200);
+  res.redirect("/")
 });
 
 module.exports = router;
