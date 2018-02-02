@@ -22,15 +22,15 @@ router.post("/", (req, res) => {
 });
 
 router.put("/:id?", (req, res) => {
-  //PUT stuff here lol xD :3 <(^_^<)
   let id = req.params.id;
   store.UpdateChirp(id, req.body);
+  console.log(id);
+  console.log(req.body);
   res.status(200)
   res.redirect("/");
 });
 
 router.delete("/:id?", (req, res) => {
-  //DELETE stuff here Dx- - - - <(*_*<)
   let id = req.params.id;
   store.DeleteChirp(id);
   res.status(200);
